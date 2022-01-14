@@ -20,16 +20,14 @@ const Products = () => {
 
   useEffect(() => {
       fetchProducts();
-      setTimeout(() => {
-          console.log(products)
-      }, 1500)
+  
   }, []);
 
   return (
-    <>
+    <div className="col-4 inline" style={{display: 'flex', flexDirection: 'row'}} >
 
       {products&&products.map((value) => 
-        <Product
+        <Product 
           name={value.name}
           productId={value.productId}
           brandName={value.brandName}
@@ -43,7 +41,7 @@ const Products = () => {
           isNewProduct={value.isNewProduct}
         />
       )}
-    </>
+    </div>
   );
 };
 
