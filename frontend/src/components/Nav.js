@@ -11,7 +11,7 @@ const Nav = () => {
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         {" "}
-        <a class="navbar-brand name" href="gosnippets.com" target="_blank">
+        <a class="navbar-brand name" href="/" target="_blank">
           Bella
         </a>{" "}
         <button
